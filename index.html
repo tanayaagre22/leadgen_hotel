@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task10</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<style>
+    .ho{
+        text-align: center;
+        color: white;
+        font-size: large;
+    }
+    .ds{
+        text-align: center;
+        color: orange;
+        font-size: medium;
+    }
+    .ip{
+        text-align: center;
+        color: white;
+        font-size: small;
+    }
+    .di{
+        background-color: rgba(0, 0, 0, 0.8);
+        margin: 30px;
+        padding: 30px;
+    }.gi{
+    background-image: url(assests/hero-bg25.jpg) ;
+    background-repeat: no-repeat;}
+    .sec {
+        background-color: #8f887e;
+        border-radius: 30px;
+        font-size: 12px;
+        padding: 8px 25px;
+        font-weight: 600;
+        color: white;
+        margin-left: 90px;
+    }
+
+    .umbrella {
+        width: 100%;
+        height: 100%;
+    }
+
+    .jerry {
+        width: 100%;
+        height: 100%;
+        border: 10px white solid;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+    }
+
+    .heading {
+        text-align: center;
+    }
+    #bg-row{
+        background-color: #F5F0E9;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 100px 20px 100px 20px;
+    }
+    .zoro{
+        color: #848484;
+        padding-top: 130px;
+        padding-left: 90px;
+    }
+    .luffy{
+        color: #c0812a;
+        padding-left: 90px;
+    }
+    .nami{
+        color: #848484;
+        padding-left: 90px;
+    }
+    .sanji{
+        color: #c0812a;
+        text-align: center;
+        
+    }
+    .chopper{
+        color: #848484;
+        text-align: center;
+    }
+    .card-body{
+        background-color: #c0812a;
+        text-align: center;
+    }
+    .card-footer h2{
+        text-align: center;
+    }
+    .card-footer p{
+        text-align: center;
+    }
+    .ace{
+        text-align: center;
+        color: #c0812a;
+    }
+    .law{
+        text-align: center;
+    }
+    #robin{
+        text-decoration: none;
+        color: black;
+    }
+    .sabo{
+        color: #848484;
+        padding-top: 20px;
+        padding-left: 50px;
+    }
+    .bepo{
+        color: #848484;
+        padding-left: 50px;
+    }
+    .jimbei{
+        padding-left: 35%;
+    }
+    .brook{
+        font-size: large;
+        text-align: center;
+    }
+    .boa{
+        text-align: center;
+    }
+    .ceaser{
+        padding-left: 80%;
+    }
+    .naruto{
+        padding-top: 30px;
+        color: #848484;
+    }
+    .sasuke{
+        height: 30%;
+        width: 33.1%;
+    }
+    #hinata{
+        background-color: #c0812a;
+    }
+    .sakura{
+        color: white;
+        padding-top: 50px;
+    }
+    .itachi{
+        color: white;
+    }
+    .obito{
+        color: white;
+    }
+    .madara{
+        color: white;
+    }
+    .zetsu{
+        text-align: justify;
+    }
+    .light{
+        height: 100%;
+        width: 100%;
+    }
+    #temari{
+        margin-left: 155px;
+    }
+    .mikey{
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    .draken{
+        text-align: center;
+        color: white;
+        font-size: small;
+    }
+    .mitsuha{
+        text-align: center;
+        color: orange;
+        font-size: medium;
+    }
+    .anya{
+        text-align: center;
+        color: #848484;
+        font-size: small;
+    }
+    .hiro{
+        background-color: rgba(0, 0, 0, 0.8);
+        margin: 50px;
+    }
+    .hotel{
+        height: 20%;
+        width: 20%;
+        margin-left: 40%;
+    }
+    @media (min-width:1024px) and (max-width:1440px){
+
+        .center{
+        text-align: center;
+        padding: 10px 275px 10px 275px;
+    }
+    .l1{
+        margin-left: 200px;
+    }
+    .p1{
+         margin-left: 100px;
+    }
+    .t1{
+        margin-left: 500px;
+    }
+    .s1{
+        margin-left: 225px;
+    }
+    }
+    @media (min-width:768px) and ( max-width:999px){ 
+        .zoro{
+        color: #848484;
+        padding-top: 60px;
+        padding-left: 60px;
+    }
+    .luffy{
+        color: #c0812a;
+        padding-left: 60px;
+    }
+    .nami{
+        color: #848484;
+        padding-left: 60px;
+    }
+    .umbrella {
+        width: 100%;
+        height: 60%;
+        margin-top: 80px;
+    }
+    .ceaser{
+        padding-left: 80px;
+    }
+    .sasuke{
+        height: 30%;
+        width: 32%;
+    }
+    #temari{
+        margin-left: 50px;
+    }
+    .hiro{
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    #ic1{
+       
+        margin-left: 150px;
+
+    }
+    
+    #ic2{
+        margin-left: 200px;
+
+    }
+    #ic3{
+        margin-left: 150px;
+
+    }
+    #ic4{
+        margin-left: 200px;
+
+
+    }
+    .cla4{
+        text-align: center;
+
+    }
+    .cla5{
+        text-align: center;
+
+    }
+    .cla6{
+        text-align: center;
+
+    }
+    .l1{
+        margin-left: 150px;
+    }
+    .p1{
+         margin-left: 100px;
+    }
+    .t1{
+        margin-left: 400px;
+    }
+    .s1{
+        margin-left: 200px;
+    }
+    .img-1{
+        width: 100px;
+    }
+    
+    }
+    @media (min-width:320px) and (max-width:480px) {
+        .card {
+            width: 100%;
+        }
+        .center{
+        text-align: center;
+        /* padding: 10px 275px 10px 275px; */
+    }
+    .zoro{
+        color: #848484;
+        text-align: center;
+        padding: 0px;
+    }
+    .luffy{
+        color: #c0812a;
+        text-align: center;
+        padding: 0px;
+    }
+    .nami{
+        color: #848484;
+        text-align: center;
+        padding: 0px;
+    } 
+    .ceaser{
+        padding-left: 80px;
+    }  
+    .naruto{
+        padding-top: 30px;
+        color: #848484;
+        text-align: center;
+    }
+    .sasuke{
+        height: 30%;
+        width: 31%;
+    }
+    .light{
+        margin-top: 0px;
+        height: 130%;
+        width: 100%;
+    }
+    #temari{
+        margin-left: 60px;
+    }
+    .hotel{
+        height: 40%;
+        width: 40%;
+        margin-left: 25%;
+    }
+    #ic1{
+        margin-left: 150px;
+
+    }
+    #ic2{
+        margin-left: 150px;
+
+    }
+    #ic3{
+        margin-left: 150px;
+
+    }
+    #ic4{
+        margin-left: 150px;
+
+    }
+    .cla4{
+        text-align: center;
+
+    }
+    .cla5{
+        text-align: center;
+
+    }
+    .cla6{
+        text-align: center;
+
+    }
+    #robin{
+        
+        align-items:center;
+    }
+    .sabo{
+        margin-left: 10px;
+    }
+    .bepo{
+        margin-left: 10px;
+    }
+    
+    
+    }
+    
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="header">
+            <nav class="navbar navbar-expand-sm bg-dark  navbar-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="assests/logo.png"
+                        alt="LeadgenLogo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">THE HOTEL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">ROOMS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">FACILITIES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">OFFERS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">LOCATION</a>
+                        </li>
+                        <li class="nav-item" style="margin-right: 10px;">
+                            <button class="btn btn-light" style="border-radius: 0%;"><i class="fa fa-bookmark"></i>BOOK
+                                NOW</button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assests/enjoy.jpg" alt="img-1" class="d-block" style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assests/resort.jpg" alt="img-2" class="d-block" style="width:100%">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assests/task10_1.jpg" alt="img-3" class="d-block" style="width:100%">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 90px;">
+            <div class="col-lg-6 col-md-6 col-12">
+                <h6 class="zoro">PROVIDING QUALITY SERVICES SINCE '98.</h6>
+                <h2 class="luffy">Redefines the luxury<br>hospitality experience.</h2>
+                <p class="nami">Lorem Ipsum is simply dummy text of the printing and <br>typesetting industry. It has survived not only
+                    five centuries, but <br>also the leap into electronic typesetting, remaining essentially<br> unchanged.</p>
+                <p class="nami">Lorem Ipsum has been the industry's standard dummy text<br> ever since the when an unknown printer took a
+                    galley of type <br>scrambled it to make a type specimen book.</p>
+                <a href="#">
+                    <button class="btn sec" type="button">READ MORE<i class="fa fa-angle-right"></i></button>
+                </a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12" style="margin-top: 10px;">
+                <img src="assests/task10_2.png"
+                    alt="img4" class="umbrella" width="100px">
+            </div>
+        </div>
+        <!-- cards -->
+        <div class="row" id="bg-row">
+            <h3 class="center sanji">ROOMS & SUITS</h3>
+            <p class="center chopper">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="assests/card1.jpg"
+                            alt="img 1" width="100%">
+                    </div>
+                    <div class="card-body">
+                        <h2>FROM $50/ PER NIGHT</h2>
+                    </div>
+                    <div class="card-footer">
+                        <h2>CLASSIC DOUBLE ROOM</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="assests/card2.jpg"
+                            alt="img 1" width="100%">
+                    </div>
+                    <div class="card-body">
+                        <h2>FROM $30/ PER NIGHT</h2>
+                    </div>
+                    <div class="card-footer">
+                        <h2>ONE BEDROOM SUITE</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="assests/card3.jpg"
+                            alt="img 1" width="100%">
+                    </div>
+                    <div class="card-body">
+                        <h2>FROM $25/ PER NIGHT</h2>
+                    </div>
+                    <div class="card-footer">
+                        <h2>EMPIRE STATE VIEW SUITE</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+                <a href="#">
+                    <img src="assests/card4.jpg"
+                        alt="img8" class="jerry">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <a href="#">
+                    <img src="assests/card5.jpg"
+                        alt="img8" class="jerry">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <a href="#">
+                    <img src="assests/card6.jpg"
+                        alt="img8" class="jerry">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <a href="#">
+                    <img src="assests/card7.jpg"
+                        alt="img8" class="jerry">
+                </a>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 90px;">
+          <h3 class="ace">HOTEL FACILITIES</h3>
+          <p class="law">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the <br>industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and <br> scrambled it to make a type specimen book.</p>
+          
+  <ul class="nav nav-tabs justify-content-center" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#swim" id="robin">SWIMMING/GYM</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#spo" id="robin">SPORTS CLUB</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#pick" id="robin">PICK UP</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#rest" id="robin">RESTRAURANT/BAR</a>
+      </li>
+  </ul>
+
+  
+  <div class="tab-content">
+    <div id="swim" class="container tab-pane active"><br>
+      <div class="row" style="padding-top: 40px; margin-right: 50px;">
+        <div class="col-lg-6 col-md-6 col-12">
+            <img src="assests/swim.jpg" alt="S/G" style="height: 100%;width: 100%;">
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <h2 class="sabo">The world class<br>swimming and gym.</h2>
+            <p class="bepo">Lorem Ipsum is simply dummy text of the printing<br> and typesetting industry. It has survived not only<br> five centuries, but also the leap into electronic <br>typesetting, remaining essentially unchanged. <br>Lorem Ipsum is simply dummy text.</p> 
+            <p class="bepo">Lorem Ipsum is simply dummy text of the printing<br> and typesetting industry. It has survived not only <br>five centuries, but also the leap into electronic typesetting.</p>
+          </div>
+        </div>
+      </div>
+    <div id="spo" class="container tab-pane fade"><br>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+                <img src="assests/gym.jpg" alt="S/G" style="height: 100%;width: 100%;">
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+                <h2>The world class<br>sports and golf club.</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text. <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+              </div>
+            </div>
+    </div>
+    <div id="pick" class="container tab-pane fade"><br>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+                <img src="assests/img1.jpg" alt="S/G" style="height: 100%;width: 100%;">
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+                <h2>The world class<br>pick up and luggage.</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text. <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+              </div>
+            </div>
+    </div>
+    <div id="rest" class="container tab-pane fade"><br>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-12">
+                <img src="assests/img2.jpg" alt="S/G" style="height: 100%;width: 100%;">
+              </div>
+              <div class="col-lg-6 col-md-6 col-12">
+                <h2>The world class<br>restaurant & banquet hall.</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is simply dummy text. <br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting.</p>
+              </div>
+            </div>
+      </div>
+  </div>
+        </div>
+        <div class="row" style="margin-top: 90px;">
+            <div class="carousel slide" id="demo2" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo2" data-bs-slide-to="1"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="#"><img src="assests/img1.jpg" alt="car1" class="sasuke"></a>
+                        <a href="#"><img src="assests/img2.jpg" alt="car2" class="sasuke"></a>
+                        <a href="#"><img src="assests/img3.jpg" alt="car3" class="sasuke"></a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#"><img src="assests/img5.jpg" alt="car3" class="sasuke"></a>
+                        <a href="#"><img src="assests/img6.jpg" alt="car4" class="sasuke"></a>
+                        <a href="#"><img src="assests/img7.jpg" alt="car5" class="sasuke"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="bg-row">
+            <div class="col-lg-3 col-md-6 col-12">
+                <img src="assests/leaf.png" alt="leaf" class="jimbei">
+                <h2 class="brook">GREAT ENVIRONMENT</h2>
+                <p class="boa">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <img src="assests/free.png" alt="tea" class="jimbei">
+                <h2 class="brook">FREE BREAKFAST</h2>
+                <p class="boa">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <img src="assests/clean.png" alt="clean" class="jimbei">
+                <h2 class="brook">CLEAN EVERYDAY</h2>
+                <p class="boa">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <img src="assests/task10_3.png" alt="wine" class="jimbei">
+                <h2 class="brook">ENJOY NIGHTLIFE</h2>
+                <p class="boa">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 90px;">
+            <div class="col-lg-6 col-md-4 col-12">
+                <img src="assests/offer.png" alt="logo" class="ceaser">
+            </div>
+            <div class="col-lg-6 col-md-8 col-12">
+                <h2 class="naruto">We offers the perfect setting for <br> rare moments of romance.</h2>
+            </div>
+        </div>
+        <div class="row zetsu" style="margin-top: 90px;" >
+            <div class="col-lg-6 col-md-12 col-12" id="hinata">
+                <h1 class="sakura">Luxury Services</h1>
+                <p class="itachi">Lorem Ipsum is simply dummy text of the printing and <br>typesetting industry. Lorem Ipsum has been the <br>standard dummy text.</p>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <h3 class="obito">01.Exclusive interior</h3>
+                        <p class="madara">Lorem Ipsum is simply dummy text<br> of the printing and typesetting<br> industry. </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <h3 class="obito">02.Wellness & spa</h3>
+                        <p class="madara">Lorem Ipsum is simply dummy text <br>of the printing and typesetting<br> industry.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <h3 class="obito">03.Bar & restaurant</h3>
+                            <p class="madara">Lorem Ipsum is simply dummy text <br>of the printing and typesetting<br> industry.</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <h3 class="obito">04.Parking & security</h3>
+                            <p class="madara">Lorem Ipsum is simply dummy text <br>of the printing and typesetting<br> industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-12 ">
+                <img src="assests/task10_5.jpg" alt="lamp" class="light">
+            </div>
+        </div>
+        <div class="row" id="bg-row" >
+            <h2 class="ace">HOTEL OFFERS</h2>
+            <p class="law">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.</p>
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="row">
+                    <div class="card mb-3" style="max-width:540px;"> 
+                        <div class="row g-0"> 
+                            <div class="col-md-6"> 
+                                <img src= "assests/t1.jpg" 
+              
+                                    class="img-fluid rounded-start" alt="..." style="height: 100%;"> 
+                            </div> 
+                            <div class="col-md-6"> 
+                                <div class="card-body" style="background-color: white;"> 
+                                    <h5 class="card-title"> 
+                                      HONEYMOON PACKAGE
+                                    </h5> 
+                                    <p class="card-text"> 
+                                      Lorem Ipsum is simply text dummy text of the printing and typesetting industry. an Lorem Ipsum has been. 
+                                    </p> 
+                                    <p class="card-text"> 
+                                        <a href="#" style="text-align: none;color:#c0812a ;">PER PERSON/$2000</a>
+                                    </p> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="card mb-3" style="max-width:540px;"> 
+                        <div class="row g-0"> 
+                            <div class="col-md-6"> 
+                                <img src= "assests/t1_1.jpg" 
+              
+                                    class="img-fluid rounded-start" alt="..." style="height: 100%;"> 
+                            </div> 
+                            <div class="col-md-6"> 
+                                <div class="card-body" style="background-color: white;"> 
+                                    <h5 class="card-title"> 
+                                      COCKTAIL PACKAGE
+                                    </h5> 
+                                    <p class="card-text"> 
+                                      Lorem Ipsum is simply text dummy text of the printing and typesetting industry. an Lorem Ipsum has been. 
+                                    </p> 
+                                    <p class="card-text"> 
+                                        <a href="#" style="text-align: none;color: #c0812a;">PER PERSON/$199</a>
+                                    </p> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12">
+                <div class="row">
+                    <div class="card mb-3" style="max-width:540px;"> 
+                        <div class="row g-0"> 
+                            <div class="col-md-6"> 
+                                <img src=  "assests/t1_2.jpg" 
+             
+                                    class="img-fluid rounded-start" alt="..." style="height: 100%;"> 
+                            </div> 
+                            <div class="col-md-6"> 
+                                <div class="card-body" style="background-color: white;"> 
+                                    <h5 class="card-title"> 
+                                      SURFING PACKAGE
+                                    </h5> 
+                                    <p class="card-text"> 
+                                      Lorem Ipsum is simply text dummy text of the printing and typesetting industry. an Lorem Ipsum has been. 
+                                    </p> 
+                                    <p class="card-text"> 
+                                        <a href="#" style="text-align: none;color:#c0812a ;">PER PERSON/$299</a>
+                                    </p> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="card mb-3" style="max-width:540px;"> 
+                        <div class="row g-0"> 
+                            <div class="col-md-6"> 
+                                <img src= "assests/t1_3.jpg" 
+              
+                                    class="img-fluid rounded-start" alt="..." style="height: 100%;"> 
+                            </div> 
+                            <div class="col-md-6"> 
+                                <div class="card-body" style="background-color: white;"> 
+                                    <h5 class="card-title"> 
+                                      THE LAMB PACKAGE
+                                    </h5> 
+                                    <p class="card-text"> 
+                                      Lorem Ipsum is simply text dummy text of the printing and typesetting industry. an Lorem Ipsum has been. 
+                                    </p> 
+                                    <p class="card-text"> 
+                                        <a href="#" style="text-align: none;color: #c0812a;">PER PERSON/$300</a>
+                                    </p> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 90px;">
+            <div class="col-lg-4 col-md-4 col-12">
+                <img src="assests/usa.jpg" alt="feedback1" style="border-radius: 50%;" id="temari">
+                <p style="color: #848484;text-align: center;font-size: small;">Lorem Ipsum is simply dummy text of the <br>printing and typesetting industry. Lorem Ipsum<br> has been the industry's standard dummy text <br>ever since the 1500s, printer.</p>
+                <p style="color: black;text-align: center;font-size: small;">MARK STRINGER, USA</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <img src="assests/canada.jpg" alt="feedback1" style="border-radius: 50%;" id="temari">
+                <p style="color: #848484;text-align: center;font-size: small;">Lorem Ipsum is simply dummy text of the <br>printing and typesetting industry. Lorem Ipsum<br> has been the industry's standard dummy text <br>ever since the 1500s, printer.</p>
+                <p style="color: black;text-align: center;font-size: small;">SHOKO MUGIKURA, CANADA</p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+                <img src="assests/india.jpg" alt="feedback1" style="border-radius: 50%;" id="temari">
+                <p style="color: #848484;text-align: center;font-size: small;">Lorem Ipsum is simply dummy text of the <br>printing and typesetting industry. Lorem Ipsum<br> has been the industry's standard dummy text <br>ever since the 1500s, printer.</p>
+                <p style="color: black;text-align: center;font-size: small;">PAUL SCRIVENS, INDIA</p>
+            </div>
+        </div>
+        
+
+        <div class="gi"> 
+            <div class="row ">
+                
+                <div class="col-lg-4 col-md-12 col-12 mikey" id="up">
+                <div class="row di" >
+    
+                    <h3 class="ho">A HOLIDAY TO REMEMBER</h3>
+                    
+                    <h2 class="ds">Discover the world</h2>
+                    
+                    <p class="ip">Lorem Ipsum is simply text of the <br>printing and typesetting industry.<br> Lorem Ipsum has been in
+                    
+                    </div>
+                    </div>
+                    
+                    
+                    <div class="col-lg-4 col-md-12 col-12 mikey" id="up1">
+                    
+                    <div class="row di">
+                    
+                    <h3 class="ho">A HOLIDAY TO REMEMBER</h3>
+                    
+                    <h2 class="ds">Relax and Enjoy</h2>
+                    
+                    <p class="ip">Lorem Ipsum is simply text of the <br>printing and typesetting industry.<br> Lorem Ipsum has been in
+                    
+                    </div>
+                    
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-12 col-12 mikey" id="up2">
+                    
+                    <div class="row di" >
+                    
+                    <h3 class="ho">A HOLIDAY TO REMEMBER</h3>
+                    
+                    <h2 class="ds">Luxury by the Sea</h2>
+                    
+                    <p class="ip">Lorem Ipsum is simply text of the <br>printing and typesetting industry.<br> Lorem Ipsum has beer
+                    
+                    </div>
+                    
+                    </div>
+              
+    </div>
+    </div>
+    </div>
+
+        <div class="row" style="margin-top: 90px;">
+            <div class="col-lg-3 col-md-3 col-12">
+                <h3 style="text-align: center;">1500</h3>
+                <p style="text-align: center;">Honeymoon Couple</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-12">
+                <h3 style="text-align: center;">1400</h3>
+                <p style="text-align: center;">Opening Hours</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-12">
+                <h3 style="text-align: center;">1250</h3>
+                <p style="text-align: center;">Satisfaction Guests</p>
+            </div>
+            <div class="col-lg-3 col-md-3 col-12">
+                <h3 style="text-align: center;">1600</h3>
+                <p style="text-align: center;">Will Come Back</p>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 90px;">
+            <div class="col-lg-8 col-md-6 col-12">
+                <img src="assests/img8.jpg" alt="img29" style="height: 100%;width: 100%;">
+            </div>
+            <div class="col-lg-4 col-md-6 col-12" style="background-color: #c0812a;">
+                <h1 class="cla1">BOOK NOW!</h1>
+                <h3 class="cla2">Limited rooms available!</h3>
+                <p class="cla3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.</p>
+                <input type="text" class="form-control" placeholder="Your Name" name="name" id="i10"> <br>
+                <input type="text" class="form-control" placeholder="Your Email" name="name" id="i10"> <br>
+                    <button type="button" class="btn" id="i11">CHECK AVAILABILTY</button>  
+            </div>
+            </div>
+            <div class="row" style="margin-top: 90px;">
+            <div class="col-lg-3 col-md-6 col-12">
+                <i class="fa fa-map-marker-alt" id="ic1"></i>
+                <h2 class="cla4">Contact Address</h2>
+                <p class="cla5">301 The Greenhouse, Custard,<br>
+                    Factory, London, E2 8DY.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <i class="fa fa-mobile"  id="ic2"></i>
+                <h2 class="cla4">Call Us Today!</h2>
+                <p class="cla5">(M) +44 (0) 123 456 7890<br>
+                    (O) +44 (0) 123 456 7890</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <i class="fa fa-envelope" id="ic3"></i>
+                <h2 class="cla4">Email</h2>
+                <a href="#" > <p class="cla6">no-reply@domain.com <br>
+                    help@domain.com </p>
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <i class="fa fa-clock" id="ic4"></i>
+                <h2 class="cla4">Working Hours</h2>
+                <p class="cla5">Mon to Sat - 9 AM to 11 PM<br>
+                    Sunday 10 AM to 6 PM</p>
+            </div>
+            </div>
+            <div class="row" style="margin-top: 90px;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119065.02905823676!2d78.99010825797474!3d21.161065901994068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0a5a31faf13%3A0x19b37d06d0bb3e2b!2sNagpur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1708349275147!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="row" style="margin-top: 90px;">
+                <img src="assests/logo.png"alt="LeadgenLogo" class="hotel">
+            </div>
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-4">
+                            <div class="p1">
+                            <a href="#" style="text-decoration: none;color: #848484;font-size: small; ">Privacy Policy</a>
+                        </div>
+                    </div>
+                        <div class="col-lg-4 col-md-4 col-4">
+                            <div class="t1">
+                            <a href="#" style="text-decoration: none;color: #848484;font-size: small;">Terms and Conditions</a>
+                        </div>
+                    </div>
+                        <div class="col-lg-4 col-md-4 col-4">
+                            <div class="l1">
+                            <a href="#" style="text-decoration: none; color: #848484;font-size: small;">Legal</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="row">
+                    <div class="s1">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <p style="color: #848484; text-align: center;font-size: small; ">© 2016 LeadGen is proudly powered by ThemeZaa.</p>
+                </div>
+            </div>
+            </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-2">
+                            <a href="#"><i class="fab fa-facebook" style="color: #848484;"></i></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-2">
+                            <a href="#"><i class="fab fa-twitter" style="color: #848484;"></i></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-2">
+                            <a href="#"><i class="fab fa-google" style="color: #848484;"></i></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-2">
+                            <a href="#"><i class="fab fa-pinterest" style="color: #848484;"></i></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-2">
+                            <a href="#"><i class="fab fa-linkedin" style="color: #848484;"></i></a>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-2">
+                            <a href="#"><i class="fab fa-instagram" style="color: #848484;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+
+</html>
